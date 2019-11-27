@@ -1,0 +1,14 @@
+LIBFLAGS=
+
+all:	tcpClient udpClient
+
+tcpClient: tcpClient.c
+	gcc ${CFLAGS} tcpClient.c -o tcpClient
+
+udpClient: udpClient.c
+	gcc ${CFLAGS} udpClient.c -o udpClient
+
+.PHONY: clean
+
+clean:
+	rm -f udpClient tcpClient
