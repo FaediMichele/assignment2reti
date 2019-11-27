@@ -1,14 +1,14 @@
 LIBFLAGS=
 
-all:	tcpClient udpClient
+all:	tcpClient.o udpClient.o
 
-tcpClient: tcpClient.c
-	gcc ${CFLAGS} tcpClient.c -o tcpClient
+tcpClient.o: tcpClient.c
+	gcc ${CFLAGS} tcpClient.c -o tcpClient.o
 
-udpClient: udpClient.c
-	gcc ${CFLAGS} udpClient.c -o udpClient
+udpClient.o: udpClient.c
+	gcc ${CFLAGS} udpClient.c -o udpClient.o
 
 .PHONY: clean
 
 clean:
-	rm -f udpClient tcpClient
+	rm -f udpClient.o tcpClient.o
