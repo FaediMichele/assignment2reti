@@ -1,4 +1,4 @@
-udpServer udpWait udp 7000 wait
-tcpServer tcpWait tcp 7001 wait
-udpServer udpNowait udp 7002 nowait
-tcpServer tcpNowait tcp 7003 nowait
+udpServer.o udpWait udp 8000 wait
+tcpServer.o tcpWait tcp 8001 wait
+udpServer.o udpNowait udp 8002 nowait
+tcpServer.o tcpNowait tcp 8003 nowait
